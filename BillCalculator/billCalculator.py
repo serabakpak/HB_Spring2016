@@ -12,4 +12,4 @@ tip = float(raw_input("Enter the percentage of tip you want to leave: "))
 
 total_bill = bill + bill*(tip/100)
 
-print "The tip is %f and the total bill is %f ." % (float(tip), float(total_bill))
+print "The tip is %f and the total bill is %f ." % (tip, total_bill)

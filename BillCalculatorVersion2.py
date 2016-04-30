@@ -23,6 +23,9 @@
 # Call your function by passing in 100 for the bill amount and 2 for the number of ways to split the bill. 
 # Bonus challenge! Create a docstring at the top of your file describing your program.
 
+"""This program is a bill calculator. Just enter in the original amount and it calculates the total 
+including the tip. You can also enter the size of your party and the program will split the bill for you!"""
+
 
 bill_amount = 0
 tip_percentage = 0

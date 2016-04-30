@@ -18,7 +18,8 @@
 
 # Call your function by only passing 100 for the bill amount.
 # Call your function by passing in 100 for the bill amount and 20 for the tip percentage.
-# Call your function by passing in 100 for the bill amount,  25 for the tip percentage, and 3 for the number of ways to split the bill.
+# Call your function by passing in 100 for the bill amount,  25 for the tip percentage, and 3 
+#for the number of ways to split the bill.
 # Call your function by passing in 100 for the bill amount and 2 for the number of ways to split the bill. 
 # Bonus challenge! Create a docstring at the top of your file describing your program.
 
@@ -28,14 +29,17 @@ tip_percentage = 0
 size_party = 0
 
 def calculate_bill(bill_amount, tip_percentage = 18, size_party = 1):
-	global bill_amount
-	global tip_percentage
-	global size_party
+	
 	total_bill = bill_amount + bill_amount * tip_percentage/100
 	split_amount = total_bill / size_party
+	print ''
 	print "The original bill is",bill_amount
 	print "Tip amount is",(bill_amount * tip_percentage/100)
 	print "The total bill is",total_bill
 	print "Split amount is",split_amount
+	print ''
 
 calculate_bill(100)
+calculate_bill(100, tip_percentage = 20)
+calculate_bill(100, tip_percentage = 25, size_party = 3)
+calculate_bill(100, size_party = 2)
